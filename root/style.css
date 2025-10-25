@@ -83,6 +83,12 @@ canvas {
   width: 100%;
 }
 
+#email {
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+}
+
 footer {
   font-size: 0.9em;
   margin-bottom: 1.5em;

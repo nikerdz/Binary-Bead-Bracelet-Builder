@@ -100,9 +100,34 @@ function drawBeads(pattern) {
   };
 }
 
-downloadBtn.addEventListener("click", () => {
-  const link = document.createElement("a");
-  link.download = "WiCS_Binary_Bead_Layout.png";
-  link.href = canvas.toDataURL("image/png");
-  link.click();
+const emailBtn = document.getElementById("email-btn");
+const emailInput = document.getElementById("email");
+const emailStatus = document.getElementById("email-status");
+
+emailBtn.addEventListener("click", () => {
+  const email = emailInput.value;
+  if (!email.match(/^[^@]+@[^@]+\.[^@]+$/)) {
+    alert("Please enter a valid email!");
+    return;
+  }
+
+  // Convert canvas to base64 PNG
+  const imageData = canvas.toDataURL("image/png");
+
+  // Send to PHP via POST
+  fetch("send_email.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email, imageData }),
+  })
+  .then(res => res.text())
+  .then(response => {
+    emailStatus.textContent = response;
+  })
+  .catch(err => {
+    emailStatus.textContent = "Error sending email. Try again.";
+    console.error(err);
+  });
 });

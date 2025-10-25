@@ -14,7 +14,9 @@
 
   <section id="about">
     <h2>What is Binary?</h2>
-    <p>Computers use a simple language of 1s and 0s called <strong>binary</strong>. Each 1 or 0 is a <em>bit</em>. Eight bits make up one <em>byte</em> — enough to represent a letter or number! For example, the letter A in binary is <code>01000001</code>.</p>
+    <p>Computers use a simple language of 1s and 0s called <strong>binary</strong>.</p>
+    <p>Each 1 or 0 is a <em>bit</em>. Eight bits make up one <em>byte</em> — enough to represent a letter or number!</p>
+    <p>For example, the letter A in binary is <code>01000001</code>.</p>
   </section>
 
   <section id="generator">
@@ -27,15 +29,17 @@
       <button id="generate-btn">Generate Pattern</button>
     </div>
 
-    <canvas id="beadCanvas" width="900" height="200"></canvas>
+    <canvas id="beadCanvas" width="900" height="315"></canvas>
 
-    <div id="download-area">
-      <button id="download-btn">Download My Bead Layout 💾</button>
+    <div id="email-area">
+      <input type="email" id="email" placeholder="Enter your email" required>
+      <button id="email-btn">Email My Bead Layout 💌</button>
+      <p id="email-status"></p>
     </div>
   </section>
 
   <footer>
-    <p>Made with 💖 by the Women in Computer Science Club | University of Windsor</p>
+    <p>Made with 💗 by the Women in Computer Science Club @ The University of Windsor | <a href="https://wics-uwindsor.ca/">wics-uwindsor.ca</a></p>
   </footer>
 
   <script src="script.js"></script>
