@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Bead Bracelet Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💻 WiCS Binary Bead Bracelet Builder 💗</h1>
+    <p>Learn how computers use <strong>binary</strong> — the language of 1s and 0s — to represent information, and build your own binary bead pattern!</p>
+  </header>
+
+  <section id="about">
+    <h2>What is Binary?</h2>
+    <p>Computers use a simple language of 1s and 0s called <strong>binary</strong>. Each 1 or 0 is a <em>bit</em>. Eight bits make up one <em>byte</em> — enough to represent a letter or number! For example, the letter A in binary is <code>01000001</code>.</p>
+  </section>
+
+  <section id="generator">
+    <h2>Generate Your Bead Pattern</h2>
+    <p>Enter your initials below to see your binary code as a colorful bead pattern!</p>
+
+    <div id="input-area">
+      <input type="text" id="first" maxlength="1" placeholder="First Initial">
+      <input type="text" id="last" maxlength="1" placeholder="Last Initial">
+      <button id="generate-btn">Generate Pattern</button>
+    </div>
+
+    <canvas id="beadCanvas" width="900" height="200"></canvas>
+
+    <div id="download-area">
+      <button id="download-btn">Download My Bead Layout 💾</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 💖 by the Women in Computer Science Club | University of Windsor</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
