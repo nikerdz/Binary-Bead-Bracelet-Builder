@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "PinkyBoy";
+  font-family: "Pinkyboy";
   src: url("fonts/Pinkyboy.ttf") format("truetype");
 }
 
@@ -34,7 +34,7 @@ h2 {
 }
 
 p {
-  font-family: "PinkyBoy", sans-serif;
+  font-family: "Pinkyboy", sans-serif;
   font-size: 20px;
 }
 
