@@ -19,24 +19,26 @@
     <p>For example, the letter A in binary is <code>01000001</code>.</p>
   </section>
 
-  <section id="generator">
-    <h2>Generate Your Bead Pattern</h2>
-    <p>Enter your initials below to see your binary code as a colorful bead pattern!</p>
+<section id="generator">
+  <h2>Generate Your Bead Pattern</h2>
+  <p>Enter your initials below to see your binary code as a colorful bead pattern!</p>
+  <p>💗 <strong>Bead colors:</strong> 1 = pink bead, 0 = purple bead, spacer = white bead</p>
 
-    <div id="input-area">
-      <input type="text" id="first" maxlength="1" placeholder="First Initial">
-      <input type="text" id="last" maxlength="1" placeholder="Last Initial">
-      <button id="generate-btn">Generate Pattern</button>
-    </div>
+  <div id="input-area">
+    <input type="text" id="first" maxlength="1" placeholder="First Initial">
+    <input type="text" id="last" maxlength="1" placeholder="Last Initial">
+    <button id="generate-btn">Generate Pattern</button>
+    <button id="clear-btn">Clear</button>
+  </div>
 
-    <canvas id="beadCanvas" width="900" height="315"></canvas>
+  <canvas id="beadCanvas" width="900" height="315"></canvas>
 
-    <div id="email-area">
-      <input type="email" id="email" placeholder="Enter your email" required>
-      <button id="email-btn">Email My Bead Layout 💌</button>
-      <p id="email-status"></p>
-    </div>
-  </section>
+  <div id="email-area">
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button id="email-btn">Email My Bead Layout 💌</button>
+    <p id="email-status"></p>
+  </div>
+</section>
 
   <footer>
     <p>Made with 💗 by the Women in Computer Science Club @ The University of Windsor | <a href="https://wics-uwindsor.ca/">wics-uwindsor.ca</a></p>
